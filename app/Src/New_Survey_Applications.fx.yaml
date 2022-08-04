@@ -1,0 +1,593 @@
+New_Survey_Applications As screen:
+    LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
+
+    ScreenBox_2 As groupContainer.manualLayoutContainer:
+        BorderColor: =mainRGBA
+        BorderThickness: =5
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container6_2 As groupContainer.verticalAutoLayoutContainer:
+            BorderColor: =mainRGBA
+            BorderThickness: =5
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =2
+
+            TitleBar_2 As groupContainer.manualLayoutContainer:
+                Fill: =mainRGBA
+                FillPortions: =0
+                Height: =32
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =1
+
+                Label2_2 As Label:
+                    Alignment: =Align.Center
+                    Color: =accentRGBA
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =12
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: ="New Survey - Applications"
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+            Container3_2 As groupContainer.horizontalAutoLayoutContainer:
+                BorderColor: =mainRGBA
+                BorderThickness: =5
+                Height: =768
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =1366
+                ZIndex: =2
+
+                Container5_2 As groupContainer.manualLayoutContainer:
+                    BorderColor: =mainRGBA
+                    BorderThickness: =5
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    ZIndex: =3
+
+                    Container7_2 As groupContainer.verticalAutoLayoutContainer:
+                        Height: =Parent.Height
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                        Container16_2 As groupContainer.horizontalAutoLayoutContainer:
+                            LayoutAlignItems: =LayoutAlignItems.Stretch
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            ZIndex: =5
+
+                            Container17_2 As groupContainer.manualLayoutContainer:
+                                FillPortions: =0
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                Width: =Parent.Width
+                                ZIndex: =2
+
+                                Container22_2 As groupContainer.verticalAutoLayoutContainer:
+                                    Height: =Parent.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutMode: =LayoutMode.Auto
+                                    Width: =Parent.Width
+                                    ZIndex: =2
+
+                                    Container13_2 As groupContainer.horizontalAutoLayoutContainer:
+                                        AlignInContainer: =AlignInContainer.Start
+                                        Fill: =ColorFade(mainRGBA, 15%)
+                                        FillPortions: =0
+                                        Height: =64
+                                        LayoutAlignItems: =LayoutAlignItems.Stretch
+                                        LayoutMinHeight: =100
+                                        LayoutMinWidth: =250
+                                        LayoutMode: =LayoutMode.Auto
+                                        Width: =Parent.Width
+                                        ZIndex: =1
+
+                                        Container23_2 As groupContainer.manualLayoutContainer:
+                                            Fill: =ColorFade(mainRGBA, 15%)
+                                            Height: =50
+                                            LayoutMinHeight: =10
+                                            LayoutMinWidth: =250
+                                            Width: =Parent.Width
+                                            ZIndex: =1
+
+                                            header_philosophy_2 As htmlViewer:
+                                                AutoHeight: =true
+                                                Color: =accentRGBA
+                                                Height: =50
+                                                HtmlText: |-
+                                                    ="<p style='transform: rotate(-45deg);'>
+                                                    Philosophy
+                                                    </p>"
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =9
+                                                Width: =100
+                                                X: |
+                                                    =Philosophy_2.X - 10
+                                                ZIndex: =9
+
+                                            header_mcad_2 As htmlViewer:
+                                                AutoHeight: =true
+                                                Color: =accentRGBA
+                                                DisplayMode: =DisplayMode.View
+                                                Height: =50
+                                                HtmlText: |-
+                                                    ="<p style='transform: rotate(-45deg);'>
+                                                    MCAD
+                                                    </p>"
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =9
+                                                Width: =100
+                                                X: =header_philosophy_2.X + 20
+                                                ZIndex: =10
+
+                                            header_excel_2 As htmlViewer:
+                                                AutoHeight: =true
+                                                Color: =accentRGBA
+                                                DisplayMode: =DisplayMode.View
+                                                Height: =50
+                                                HtmlText: |-
+                                                    ="<p style='transform: rotate(-45deg);'>
+                                                    Excel
+                                                    </p>"
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =9
+                                                Width: =100
+                                                X: =header_mcad_2.X + 20
+                                                ZIndex: =11
+
+                                            header_logic_2 As htmlViewer:
+                                                AutoHeight: =true
+                                                Color: =accentRGBA
+                                                DisplayMode: =DisplayMode.View
+                                                Height: =50
+                                                HtmlText: |-
+                                                    ="<p style='transform: rotate(-45deg);'>
+                                                    LOGIC
+                                                    </p>"
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =9
+                                                Width: =100
+                                                X: =header_excel_2.X + 20
+                                                ZIndex: =12
+
+                                            header_ge_2 As htmlViewer:
+                                                AutoHeight: =true
+                                                Color: =accentRGBA
+                                                DisplayMode: =DisplayMode.View
+                                                Height: =50
+                                                HtmlText: |-
+                                                    ="<p style='transform: rotate(-45deg);'>
+                                                    GE
+                                                    </p>"
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =9
+                                                Width: =100
+                                                X: =header_logic_2.X + 20
+                                                ZIndex: =13
+
+                                            header_sel_2 As htmlViewer:
+                                                AutoHeight: =true
+                                                Color: =accentRGBA
+                                                DisplayMode: =DisplayMode.View
+                                                Height: =50
+                                                HtmlText: |-
+                                                    ="<p style='transform: rotate(-45deg);'>
+                                                    SEL
+                                                    </p>"
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =9
+                                                Width: =100
+                                                X: =header_ge_2.X + 20
+                                                ZIndex: =14
+
+                                            header_goose_2 As htmlViewer:
+                                                AutoHeight: =true
+                                                Color: =accentRGBA
+                                                DisplayMode: =DisplayMode.View
+                                                Height: =50
+                                                HtmlText: |-
+                                                    ="<p style='transform: rotate(-45deg);'>
+                                                    GOOSE
+                                                    </p>"
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =9
+                                                Width: =100
+                                                X: =header_sel_2.X + 20
+                                                ZIndex: =15
+
+                                            header_svs_2 As htmlViewer:
+                                                AutoHeight: =true
+                                                Color: =accentRGBA
+                                                DisplayMode: =DisplayMode.View
+                                                Height: =50
+                                                HtmlText: |-
+                                                    ="<p style='transform: rotate(-45deg);'>
+                                                    SVs
+                                                    </p>"
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =9
+                                                Width: =100
+                                                X: =header_goose_2.X + 20
+                                                ZIndex: =16
+
+                                    Gallery3_2 As gallery.galleryVertical:
+                                        BorderColor: =RGBA(243, 242, 241, 1)
+                                        FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                                        FocusedBorderThickness: =2
+                                        Height: =Parent.Height
+                                        Items: =Survey_DataQuestions
+                                        Layout: =Layout.Vertical
+                                        LayoutMinHeight: =287
+                                        LayoutMinWidth: =320
+                                        TemplatePadding: =0
+                                        TemplateSize: =28
+                                        Width: =Parent.Width
+                                        ZIndex: =2
+
+                                        Container9_1 As groupContainer.manualLayoutContainer:
+                                            Height: =Parent.TemplateHeight
+                                            Width: =Parent.Width
+                                            ZIndex: =10
+
+                                            "SVs_2 As 'Check box'":
+                                                BoxSide: ='''Microsoft.CoreControls.Checkbox.BoxSide'''.Start
+                                                CheckboxSize: =Self.Width
+                                                Checked: =If(Toggle1_1.Checked, true)
+                                                CheckedCheckboxBackgroundFill: =accentRGBA
+                                                CheckedCheckboxBorderColor: =mainRGBA
+                                                CheckmarkFill: =mainRGBA
+                                                Color: =mainRGBA
+                                                DisplayMode: =DisplayMode.Edit
+                                                Height: =Parent.Height
+                                                HoverCheckboxBorderColor: =mainRGBA
+                                                Label: =""
+                                                PCFTeamsTheme: =TeamsTheme.Default
+                                                Size: =10
+                                                Tooltip: ="SVs"
+                                                UncheckedCheckboxBackgroundFill: =WhiteSmoke
+                                                UncheckedCheckboxBorderColor: =mainRGBA
+                                                Width: =Self.Height*.5
+                                                X: =GOOSE_2.X + 20
+                                                Y: =0
+                                                ZIndex: =1
+
+                                            "GOOSE_2 As 'Check box'":
+                                                BoxSide: ='''Microsoft.CoreControls.Checkbox.BoxSide'''.Start
+                                                CheckboxSize: =Self.Width
+                                                Checked: =If(Toggle1_1.Checked, true)
+                                                CheckedCheckboxBackgroundFill: =accentRGBA
+                                                CheckedCheckboxBorderColor: =mainRGBA
+                                                CheckmarkFill: =mainRGBA
+                                                Color: =mainRGBA
+                                                DisplayMode: =DisplayMode.Edit
+                                                Height: =Parent.Height
+                                                HoverCheckboxBorderColor: =mainRGBA
+                                                Label: =""
+                                                PCFTeamsTheme: =TeamsTheme.Default
+                                                Size: =10
+                                                Tooltip: ="GOOSE"
+                                                UncheckedCheckboxBackgroundFill: =WhiteSmoke
+                                                UncheckedCheckboxBorderColor: =mainRGBA
+                                                Width: =Self.Height*.5
+                                                X: =SEL_2.X + 20
+                                                Y: =0
+                                                ZIndex: =2
+
+                                            "SEL_2 As 'Check box'":
+                                                BoxSide: ='''Microsoft.CoreControls.Checkbox.BoxSide'''.Start
+                                                CheckboxSize: =Self.Width
+                                                Checked: =If(Toggle1_1.Checked, true)
+                                                CheckedCheckboxBackgroundFill: =accentRGBA
+                                                CheckedCheckboxBorderColor: =mainRGBA
+                                                CheckmarkFill: =mainRGBA
+                                                Color: =mainRGBA
+                                                DisplayMode: =DisplayMode.Edit
+                                                Height: =Parent.Height
+                                                HoverCheckboxBorderColor: =mainRGBA
+                                                Label: =""
+                                                PCFTeamsTheme: =TeamsTheme.Default
+                                                Size: =10
+                                                Tooltip: ="SEL"
+                                                UncheckedCheckboxBackgroundFill: =WhiteSmoke
+                                                UncheckedCheckboxBorderColor: =mainRGBA
+                                                Width: =Self.Height*.5
+                                                X: =GE_2.X + 20
+                                                Y: =0
+                                                ZIndex: =3
+
+                                            "GE_2 As 'Check box'":
+                                                BoxSide: ='''Microsoft.CoreControls.Checkbox.BoxSide'''.Start
+                                                CheckboxSize: =Self.Width
+                                                Checked: =If(Toggle1_1.Checked, true)
+                                                CheckedCheckboxBackgroundFill: =accentRGBA
+                                                CheckedCheckboxBorderColor: =mainRGBA
+                                                CheckmarkFill: =mainRGBA
+                                                Color: =mainRGBA
+                                                DisplayMode: =DisplayMode.Edit
+                                                Height: =Parent.Height
+                                                HoverCheckboxBorderColor: =mainRGBA
+                                                Label: =""
+                                                PCFTeamsTheme: =TeamsTheme.Default
+                                                Size: =10
+                                                Tooltip: ="GE"
+                                                UncheckedCheckboxBackgroundFill: =WhiteSmoke
+                                                UncheckedCheckboxBorderColor: =mainRGBA
+                                                Width: =Self.Height*.5
+                                                X: =LOGIC_2.X + 20
+                                                Y: =0
+                                                ZIndex: =4
+
+                                            "LOGIC_2 As 'Check box'":
+                                                BoxSide: ='''Microsoft.CoreControls.Checkbox.BoxSide'''.Start
+                                                CheckboxSize: =Self.Width
+                                                Checked: =If(Toggle1_1.Checked, true)
+                                                CheckedCheckboxBackgroundFill: =accentRGBA
+                                                CheckedCheckboxBorderColor: =mainRGBA
+                                                CheckmarkFill: =mainRGBA
+                                                Color: =mainRGBA
+                                                DisplayMode: =DisplayMode.Edit
+                                                Height: =Parent.Height
+                                                HoverCheckboxBorderColor: =mainRGBA
+                                                Label: =""
+                                                PCFTeamsTheme: =TeamsTheme.Default
+                                                Size: =10
+                                                Tooltip: ="LOGIC"
+                                                UncheckedCheckboxBackgroundFill: =WhiteSmoke
+                                                UncheckedCheckboxBorderColor: =mainRGBA
+                                                Width: =Self.Height*.5
+                                                X: |
+                                                    =EXCEL_2.X + 20
+                                                Y: =0
+                                                ZIndex: =5
+
+                                            "EXCEL_2 As 'Check box'":
+                                                BoxSide: ='''Microsoft.CoreControls.Checkbox.BoxSide'''.Start
+                                                CheckboxSize: =Self.Width
+                                                Checked: =If(Toggle1_1.Checked, true)
+                                                CheckedCheckboxBackgroundFill: =accentRGBA
+                                                CheckedCheckboxBorderColor: =mainRGBA
+                                                CheckmarkFill: =mainRGBA
+                                                Color: =mainRGBA
+                                                DisplayMode: =DisplayMode.Edit
+                                                Height: =Parent.Height
+                                                HoverCheckboxBorderColor: =mainRGBA
+                                                Label: =""
+                                                PCFTeamsTheme: =TeamsTheme.Default
+                                                Size: =10
+                                                Tooltip: ="EXCEL"
+                                                UncheckedCheckboxBackgroundFill: =WhiteSmoke
+                                                UncheckedCheckboxBorderColor: =mainRGBA
+                                                Width: =Self.Height*.5
+                                                X: |
+                                                    =MCAD_2.X + 20
+                                                Y: |
+                                                    =0
+                                                ZIndex: =6
+
+                                            "MCAD_2 As 'Check box'":
+                                                BoxSide: ='''Microsoft.CoreControls.Checkbox.BoxSide'''.Start
+                                                CheckboxSize: =Self.Width
+                                                Checked: =If(Toggle1_1.Checked, true)
+                                                CheckedCheckboxBackgroundFill: =accentRGBA
+                                                CheckedCheckboxBorderColor: =mainRGBA
+                                                CheckmarkFill: =mainRGBA
+                                                Color: =mainRGBA
+                                                DisplayMode: =DisplayMode.Edit
+                                                Height: =Parent.Height
+                                                HoverCheckboxBorderColor: =mainRGBA
+                                                Label: =""
+                                                PCFTeamsTheme: =TeamsTheme.Default
+                                                Size: =10
+                                                Tooltip: ="MCAD"
+                                                UncheckedCheckboxBackgroundFill: =WhiteSmoke
+                                                UncheckedCheckboxBorderColor: =mainRGBA
+                                                Width: =Self.Height*.5
+                                                X: =Philosophy_2.X + 20
+                                                Y: =0
+                                                ZIndex: =7
+
+                                            "Philosophy_2 As 'Check box'":
+                                                BoxSide: ='''Microsoft.CoreControls.Checkbox.BoxSide'''.Start
+                                                CheckboxSize: =Self.Width
+                                                Checked: =If(Toggle1_1.Checked, true)
+                                                CheckedCheckboxBackgroundFill: =accentRGBA
+                                                CheckedCheckboxBorderColor: =mainRGBA
+                                                CheckmarkFill: =mainRGBA
+                                                Color: =mainRGBA
+                                                DisplayMode: =DisplayMode.Edit
+                                                Height: =Parent.Height
+                                                HoverCheckboxBorderColor: =mainRGBA
+                                                Label: =""
+                                                PCFTeamsTheme: =TeamsTheme.Default
+                                                Size: =10
+                                                Tooltip: ="Philosophy"
+                                                UncheckedCheckboxBackgroundFill: =WhiteSmoke
+                                                UncheckedCheckboxBorderColor: =mainRGBA
+                                                Width: =Self.Height*.5
+                                                X: =Toggle1_1.X + Toggle1_1.Width
+                                                Y: =0
+                                                ZIndex: =8
+
+                                            Label9_1 As Label:
+                                                DisplayMode: =DisplayMode.Edit
+                                                Height: =Parent.Height
+                                                OnSelect: =Select(Gallery3_2)
+                                                PCFTeamsTheme: =TeamsTheme.Default
+                                                Text: =ThisItem.Question
+                                                Width: =Parent.Width-Self.X
+                                                X: =SVs_2.X + SVs_2.Width + 10
+                                                Y: =0
+                                                ZIndex: =9
+
+                                            Toggle1_1 As Toggle:
+                                                DisplayMode: =DisplayMode.Edit
+                                                Height: =Parent.Height
+                                                OffText: =""
+                                                OnFillColor: =accentRGBA
+                                                OnHoverFillColor: =accentRGBA
+                                                OnText: =""
+                                                PCFTeamsTheme: =TeamsTheme.Default
+                                                TextColor: =RGBA(0, 0, 0, 1)
+                                                Width: =50
+                                                X: |
+                                                    =Label5_1.X + Label5_1.Width
+                                                Y: =0
+                                                ZIndex: =10
+
+                                            Label5_1 As Label:
+                                                DisplayMode: =DisplayMode.Edit
+                                                Height: =28
+                                                PCFTeamsTheme: =TeamsTheme.Default
+                                                Text: ="All"
+                                                Width: =30
+                                                X: =10
+                                                Y: =0
+                                                ZIndex: =11
+
+        Submit_Survey_1 As groupContainer.manualLayoutContainer:
+            Height: =40
+            Width: |
+                =273
+            X: =(Parent.Width - Self.Width)/2
+            Y: =Parent.Height - Self.Height - 10
+            ZIndex: =3
+
+            Container24_2 As groupContainer.manualLayoutContainer:
+                Fill: =mainRGBA
+                Height: =Parent.Height-(Self.Y*2)
+                PaddingLeft: =Self.X
+                Width: =(Parent.Width-Self.X)-(Container20_2.Width/2)
+                X: =Container20_2.X + (Container20_2.Width/2)
+                Y: =1
+                ZIndex: =1
+
+                Button1_2 As Button:
+                    ButtonType: ='''Microsoft.CoreControls.Button.ButtonType'''.Standard
+                    DisabledFillColor: =mainRGBA
+                    DisabledTextColor: =accentRGBA
+                    DisplayMode: =DisplayMode.Edit
+                    FillColor: =mainRGBA
+                    FontSize: =12
+                    Height: =Parent.Height
+                    HoverFillColor: =mainRGBA
+                    HoverTextColor: =accentRGBA
+                    OnSelect: |-
+                        =Navigate(New_Survey_QC);
+                        Patch(
+                            Survey_UserData_1,
+                            {
+                                Name: User().FullName,
+                                category: "Applications",
+                                philosophy: Concat(Filter(Gallery3_2.AllItems, Philosophy_2.Checked), key, ","),
+                                mcad: Concat(Filter(Gallery3_2.AllItems, MCAD_2.Checked), key, ","),
+                                excel: Concat(Filter(Gallery3_2.AllItems, EXCEL_2.Checked), key, ","),
+                                logic: Concat(Filter(Gallery3_2.AllItems, LOGIC_2.Checked), key, ","),
+                                ge: Concat(Filter(Gallery3_2.AllItems, GE_2.Checked), key, ","),
+                                sel: Concat(Filter(Gallery3_2.AllItems, SEL_2.Checked), key, ","),
+                                goose: Concat(Filter(Gallery3_2.AllItems, GOOSE_2.Checked), key, ","),
+                                svs: Concat(Filter(Gallery3_2.AllItems, SVs_2.Checked), key, ",")
+                            }
+                        )
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    PressedFillColor: =mainRGBA
+                    PressedTextColor: =accentRGBA
+                    Text: ="Submit Survey - Application"
+                    TextColor: =accentRGBA
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+            Circle2_2 As circle:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =mainRGBA
+                Fill: =mainRGBA
+                Height: =Parent.Height
+                HoverFill: =mainRGBA
+                PressedFill: =mainRGBA
+                Width: =Self.Height
+                X: =Parent.Width-Self.Width
+                ZIndex: =2
+
+            Container20_2 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height
+                Width: =Self.Height
+                ZIndex: =3
+
+                Circle1_3 As circle:
+                    BorderColor: =accentRGBA
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledFill: =accentRGBA
+                    Fill: =mainRGBA
+                    Height: =Parent.Height
+                    HoverFill: =accentRGBA
+                    PressedFill: =accentRGBA
+                    Width: =Parent.Width
+                    X: =Parent.Width/2 - Self.Width/2
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =1
+
+                Icon1_3 As icon.Add:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Color: =accentRGBA
+                    DisabledBorderColor: =RGBA(243, 242, 241, 1)
+                    DisabledColor: =RGBA(220, 220, 220, 1)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    Height: =Self.Width
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Icon: =Icon.Check
+                    PaddingBottom: =3
+                    PaddingLeft: =3
+                    PaddingRight: =3
+                    PaddingTop: =3
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Width: =Circle1_3.Width * .9
+                    X: =Parent.Width/2 - Self.Width/2
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =2
+

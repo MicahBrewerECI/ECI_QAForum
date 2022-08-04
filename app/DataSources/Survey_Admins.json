@@ -1,0 +1,93 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr7c2_survey_admins",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr7c2_survey_admin",
+    "MaxGetRowsCount": 500,
+    "Name": "Survey_Admins",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr7c2_name": "Name",
+      "cr7c2_survey_admin_AsyncOperations": "System Jobs",
+      "cr7c2_survey_admin_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr7c2_survey_admin_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr7c2_survey_admin_ProcessSession": "Process Sessions",
+      "cr7c2_survey_adminid": "Survey_Admin",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Survey_Admins",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Survey_Admins (Views)",
+    "Name": "_cr7c2_survey_admin_views",
+    "RelatedEntityName": "Survey_Admins",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "24effa5d-7bae-4df6-8db9-7406c92a3ef5": "Survey_Admin Associated View",
+      "bcfeb5f7-a451-44db-b627-73e46d16bcd0": "Survey_Admin Lookup View",
+      "c45dfaac-3989-4725-bd9f-feffabe71821": "Survey_Admin Advanced Find View",
+      "e4697671-5450-4400-9d46-4cc683e195e7": "Active Survey_Admins",
+      "e703d5cb-5452-474d-b4f9-88a3cd8bc238": "Inactive Survey_Admins"
+    }
+  },
+  {
+    "DisplayName": "Status (Survey_Admins)",
+    "Name": "cr7c2_survey_admin_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Survey_Admins"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Survey_Admins",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Survey_Admins)",
+    "Name": "cr7c2_survey_admin_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Survey_Admins"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Survey_Admins",
+    "Type": "OptionSetInfo"
+  }
+]

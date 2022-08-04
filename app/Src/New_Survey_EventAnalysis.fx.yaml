@@ -1,0 +1,240 @@
+New_Survey_EventAnalysis As screen:
+    LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
+
+    ScreenBox_4 As groupContainer.manualLayoutContainer:
+        BorderColor: =mainRGBA
+        BorderThickness: =5
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container6_4 As groupContainer.verticalAutoLayoutContainer:
+            BorderColor: =mainRGBA
+            BorderThickness: =5
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =2
+
+            TitleBar_4 As groupContainer.manualLayoutContainer:
+                Fill: =mainRGBA
+                FillPortions: =0
+                Height: =32
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =1
+
+                Label2_4 As Label:
+                    Alignment: =Align.Center
+                    Color: =accentRGBA
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =12
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: ="New Survey - Event Analysis"
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+            Container3_4 As groupContainer.horizontalAutoLayoutContainer:
+                BorderColor: =mainRGBA
+                BorderThickness: =5
+                Height: =768
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =1366
+                ZIndex: =2
+
+                Container5_4 As groupContainer.manualLayoutContainer:
+                    BorderColor: =mainRGBA
+                    BorderThickness: =5
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    ZIndex: =3
+
+                    Container7_4 As groupContainer.verticalAutoLayoutContainer:
+                        Height: =Parent.Height
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                        Container16_4 As groupContainer.horizontalAutoLayoutContainer:
+                            LayoutAlignItems: =LayoutAlignItems.Stretch
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            ZIndex: =5
+
+                            Container17_4 As groupContainer.manualLayoutContainer:
+                                FillPortions: =0
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                Width: =Parent.Width
+                                ZIndex: =2
+
+                                Container22_4 As groupContainer.verticalAutoLayoutContainer:
+                                    Height: =Parent.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutMode: =LayoutMode.Auto
+                                    Width: =Parent.Width
+                                    ZIndex: =2
+
+                                    Gallery3_4 As gallery.galleryVertical:
+                                        BorderColor: =RGBA(243, 242, 241, 1)
+                                        FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                                        FocusedBorderThickness: =2
+                                        Height: =Parent.Height
+                                        Items: =Survey_DataQuestions
+                                        Layout: =Layout.Vertical
+                                        LayoutMinHeight: =287
+                                        LayoutMinWidth: =320
+                                        TemplatePadding: =0
+                                        TemplateSize: =28
+                                        Width: =Parent.Width
+                                        ZIndex: =2
+
+                                        Container9_3 As groupContainer.manualLayoutContainer:
+                                            Height: =Parent.TemplateHeight
+                                            Width: =Parent.Width
+                                            ZIndex: =10
+
+                                            "Philosophy_4 As 'Check box'":
+                                                BoxSide: ='''Microsoft.CoreControls.Checkbox.BoxSide'''.Start
+                                                CheckboxSize: =Self.Width
+                                                Checked: =false
+                                                CheckedCheckboxBackgroundFill: =accentRGBA
+                                                CheckedCheckboxBorderColor: =mainRGBA
+                                                CheckmarkFill: =mainRGBA
+                                                Color: =mainRGBA
+                                                DisplayMode: =DisplayMode.Edit
+                                                Height: =Parent.Height
+                                                HoverCheckboxBorderColor: =mainRGBA
+                                                Label: =""
+                                                PCFTeamsTheme: =TeamsTheme.Default
+                                                Size: =10
+                                                Tooltip: ="Philosophy"
+                                                UncheckedCheckboxBackgroundFill: =WhiteSmoke
+                                                UncheckedCheckboxBorderColor: =mainRGBA
+                                                Width: =Self.Height*.5
+                                                X: =10
+                                                Y: =0
+                                                ZIndex: =8
+
+                                            Label9_3 As Label:
+                                                DisplayMode: =DisplayMode.Edit
+                                                Height: =Parent.Height
+                                                OnSelect: =Select(Gallery3_4)
+                                                PCFTeamsTheme: =TeamsTheme.Default
+                                                Text: =ThisItem.Question
+                                                Width: =Parent.Width-Self.X
+                                                X: =Philosophy_4.X + Philosophy_4.Width + 10
+                                                Y: =0
+                                                ZIndex: =9
+
+        Submit_Survey_3 As groupContainer.manualLayoutContainer:
+            Height: =40
+            Width: |
+                =273
+            X: =(Parent.Width - Self.Width)/2
+            Y: =Parent.Height - Self.Height - 10
+            ZIndex: =3
+
+            Container24_4 As groupContainer.manualLayoutContainer:
+                Fill: =mainRGBA
+                Height: =Parent.Height-(Self.Y*2)
+                PaddingLeft: =Self.X
+                Width: =(Parent.Width-Self.X)-(Container20_4.Width/2)
+                X: =Container20_4.X + (Container20_4.Width/2)
+                Y: =1
+                ZIndex: =1
+
+                Button1_4 As Button:
+                    ButtonType: ='''Microsoft.CoreControls.Button.ButtonType'''.Standard
+                    DisabledFillColor: =mainRGBA
+                    DisabledTextColor: =accentRGBA
+                    DisplayMode: =DisplayMode.Edit
+                    FillColor: =mainRGBA
+                    FontSize: =12
+                    Height: =Parent.Height
+                    HoverFillColor: =mainRGBA
+                    HoverTextColor: =accentRGBA
+                    OnSelect: |-
+                        =Navigate(UserView);
+                        Patch(
+                            Survey_UserData_1,
+                            {
+                                Name: User().FullName,
+                                category: "Event_Analysis",
+                                other: Concat(Filter(Gallery3_4.AllItems, Philosophy_4.Checked), key, ",")
+                            }
+                        )
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    PressedFillColor: =mainRGBA
+                    PressedTextColor: =accentRGBA
+                    Text: ="Submit Survey - Final"
+                    TextColor: =accentRGBA
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+            Circle2_4 As circle:
+                BorderColor: =RGBA(243, 242, 241, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =mainRGBA
+                Fill: =mainRGBA
+                Height: =Parent.Height
+                HoverFill: =mainRGBA
+                PressedFill: =mainRGBA
+                Width: =Self.Height
+                X: =Parent.Width-Self.Width
+                ZIndex: =2
+
+            Container20_4 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height
+                Width: =Self.Height
+                ZIndex: =3
+
+                Circle1_5 As circle:
+                    BorderColor: =accentRGBA
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledFill: =accentRGBA
+                    Fill: =mainRGBA
+                    Height: =Parent.Height
+                    HoverFill: =accentRGBA
+                    PressedFill: =accentRGBA
+                    Width: =Parent.Width
+                    X: =Parent.Width/2 - Self.Width/2
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =1
+
+                Icon1_5 As icon.Add:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Color: =accentRGBA
+                    DisabledBorderColor: =RGBA(243, 242, 241, 1)
+                    DisabledColor: =RGBA(220, 220, 220, 1)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    Height: =Self.Width
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Icon: =Icon.Check
+                    PaddingBottom: =3
+                    PaddingLeft: =3
+                    PaddingRight: =3
+                    PaddingTop: =3
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Width: =Circle1_5.Width * .9
+                    X: =Parent.Width/2 - Self.Width/2
+                    Y: =Parent.Height/2 - Self.Height/2
+                    ZIndex: =2
+

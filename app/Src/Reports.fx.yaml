@@ -1,0 +1,345 @@
+Reports As screen:
+    LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
+
+    ScreenBox_5 As groupContainer.manualLayoutContainer:
+        BorderColor: =mainRGBA
+        BorderThickness: =5
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container6_5 As groupContainer.verticalAutoLayoutContainer:
+            BorderColor: =mainRGBA
+            BorderThickness: =5
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =2
+
+            TitleBar_5 As groupContainer.manualLayoutContainer:
+                Fill: =mainRGBA
+                FillPortions: =0
+                Height: =32
+                LayoutMinHeight: =100
+                ZIndex: =1
+
+                Label2_5 As Label:
+                    Alignment: =Align.Center
+                    Color: =accentRGBA
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =12
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    PCFTeamsTheme: =TeamsTheme.Default
+                    Text: ="Survey"
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+            Container3_5 As groupContainer.horizontalAutoLayoutContainer:
+                BorderColor: =mainRGBA
+                BorderThickness: =5
+                Height: =768
+                LayoutDirection: =If(Self.Width < 1000, LayoutDirection.Vertical, LayoutDirection.Horizontal)
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =1366
+                ZIndex: =2
+
+                Container26_1 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =2
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =
+                    ZIndex: =1
+
+                    Container8_1 As groupContainer.manualLayoutContainer:
+                        LayoutMinHeight: =100
+                        Width: =Parent.Width/3
+                        ZIndex: =1
+
+                        Container1_1 As groupContainer.verticalAutoLayoutContainer:
+                            Height: =Parent.Height
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutMode: =LayoutMode.Auto
+                            Width: =Parent.Width
+                            ZIndex: =2
+
+                            Container11_1 As groupContainer.manualLayoutContainer:
+                                Fill: =ColorFade(mainRGBA, 15%)
+                                FillPortions: =0
+                                Height: =32
+                                LayoutMinHeight: =100
+                                ZIndex: =1
+
+                                Label4_1 As Label:
+                                    Alignment: =Align.Center
+                                    Color: =accentRGBA
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =32
+                                    PCFTeamsTheme: =TeamsTheme.Default
+                                    Text: ="Category"
+                                    Width: =Parent.Width
+                                    X: =0
+                                    Y: =0
+                                    ZIndex: =1
+
+                            Category_1 As gallery.galleryVertical:
+                                BorderColor: =RGBA(243, 242, 241, 1)
+                                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                                FocusedBorderThickness: =2
+                                Height: =Parent.Height
+                                Items: =Survey_DataCategories
+                                Layout: =Layout.Vertical
+                                LayoutMinHeight: =287
+                                TemplatePadding: =0
+                                TemplateSize: |
+                                    =32
+                                Width: =Parent.Width
+                                ZIndex: =3
+
+                                Container4_1 As groupContainer.manualLayoutContainer:
+                                    BorderColor: =If(ThisItem.IsSelected, mainRGBA)
+                                    Fill: =If(ThisItem.IsSelected, ColorFade(mainRGBA, 25%), RGBA(0,0,0,0))
+                                    Height: =32
+                                    Width: =Parent.Width
+                                    ZIndex: =1
+
+                                    Label1_1 As Label:
+                                        Color: =If(ThisItem.IsSelected, accentRGBA)
+                                        DisplayMode: =DisplayMode.Edit
+                                        Height: =32
+                                        PaddingStart: =10
+                                        PCFTeamsTheme: =TeamsTheme.Default
+                                        Text: =ThisItem.Name
+                                        Width: =Parent.Width
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =1
+
+                    Container15_2 As groupContainer.verticalAutoLayoutContainer:
+                        BorderColor: =mainRGBA
+                        BorderThickness: =2
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMode: =LayoutMode.Auto
+                        Visible: =If(Category.Selected.Name = "Event Analysis", false, true)
+                        Width: =Parent.Width/3
+                        ZIndex: =2
+
+                        Container14_2 As groupContainer.manualLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Start
+                            Fill: =ColorFade(mainRGBA, 15%)
+                            FillPortions: =0
+                            Height: =32
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            Width: =Container10_2.Width
+                            ZIndex: =1
+
+                            Label7_2 As Label:
+                                Alignment: =Align.Center
+                                Color: =accentRGBA
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =32
+                                PCFTeamsTheme: =TeamsTheme.Default
+                                Text: ="SubCategory"
+                                Width: =Container10_2.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =1
+
+                        Container10_2 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Start
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            Width: =Parent.Width
+                            ZIndex: =2
+
+                            SubCategory_1 As gallery.galleryVertical:
+                                BorderColor: =RGBA(243, 242, 241, 1)
+                                FillPortions: =0
+                                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                                FocusedBorderThickness: =2
+                                Height: =736
+                                Items: =Survey_DataSubCategories
+                                Layout: =Layout.Vertical
+                                TemplatePadding: =0
+                                TemplateSize: =32
+                                Width: =Parent.Width
+                                ZIndex: =1
+
+                                Container2_2 As groupContainer.manualLayoutContainer:
+                                    Fill: =If(ThisItem.IsSelected, ColorFade(mainRGBA, 25%), RGBA(0,0,0,0))
+                                    Height: =32
+                                    Width: =Parent.Width
+                                    ZIndex: =1
+
+                                    Label3_2 As Label:
+                                        Color: =If(ThisItem.IsSelected,accentRGBA)
+                                        DisplayMode: =DisplayMode.Edit
+                                        Height: =32
+                                        PaddingStart: =10
+                                        PCFTeamsTheme: =TeamsTheme.Default
+                                        Text: =ThisItem.Name
+                                        Width: =Parent.Width
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =1
+
+                    Container15_1 As groupContainer.verticalAutoLayoutContainer:
+                        BorderColor: =mainRGBA
+                        BorderThickness: =2
+                        FillPortions: =3
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width/3
+                        ZIndex: =3
+
+                        Container14_1 As groupContainer.manualLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Start
+                            Fill: =ColorFade(mainRGBA, 15%)
+                            FillPortions: =0
+                            Height: =32
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            Width: =Container10_1.Width
+                            ZIndex: =1
+
+                            Label7_1 As Label:
+                                Alignment: =Align.Center
+                                Color: =accentRGBA
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =32
+                                PCFTeamsTheme: =TeamsTheme.Default
+                                Text: ="Question"
+                                Width: =Container10_1.Width
+                                X: =0
+                                Y: =0
+                                ZIndex: =1
+
+                        Container10_1 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Start
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            Width: =Parent.Width
+                            ZIndex: =2
+
+                            Question As gallery.galleryVertical:
+                                BorderColor: =RGBA(243, 242, 241, 1)
+                                FillPortions: =0
+                                FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                                FocusedBorderThickness: =2
+                                Height: =736
+                                Items: =Survey_DataQuestions
+                                Layout: =Layout.Vertical
+                                TemplatePadding: =0
+                                TemplateSize: =32
+                                Width: =Parent.Width
+                                ZIndex: =1
+
+                                Container2_1 As groupContainer.manualLayoutContainer:
+                                    Fill: =If(ThisItem.IsSelected, ColorFade(mainRGBA, 25%), RGBA(0,0,0,0))
+                                    Height: =32
+                                    Width: =Parent.Width
+                                    ZIndex: =1
+
+                                    Label3_1 As Label:
+                                        Color: =If(ThisItem.IsSelected,accentRGBA)
+                                        DisplayMode: =DisplayMode.Edit
+                                        Height: =32
+                                        PaddingStart: =10
+                                        PCFTeamsTheme: =TeamsTheme.Default
+                                        Text: =ThisItem.Question
+                                        Width: =Parent.Width
+                                        X: =0
+                                        Y: =0
+                                        ZIndex: =1
+
+                Container5_5 As groupContainer.manualLayoutContainer:
+                    BorderColor: =mainRGBA
+                    BorderThickness: =5
+                    LayoutMinHeight: =100
+                    ZIndex: =4
+
+                    Container12 As groupContainer.verticalAutoLayoutContainer:
+                        Height: =Parent.Height
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                        HtmlText1 As htmlViewer:
+                            AlignInContainer: =AlignInContainer.Start
+                            Color: =accentRGBA
+                            DisplayMode: =DisplayMode.View
+                            Fill: =ColorFade(mainRGBA, 15%)
+                            Height: =TitleBar.Height
+                            HtmlText: ="Competent Names"
+                            Size: =10.5
+                            Width: =Parent.Width
+                            ZIndex: =1
+
+                        Gallery1 As gallery.galleryVertical:
+                            BorderColor: =RGBA(243, 242, 241, 1)
+                            FocusedBorderColor: =RGBA(98, 100, 167, 1)
+                            FocusedBorderThickness: =2
+                            Items: =Filter(Survey_UserData_1, category = Category_1.Selected.Name)
+                            Layout: =Layout.Vertical
+                            LayoutMinHeight: =287
+                            LayoutMinWidth: =320
+                            TemplatePadding: =0
+                            TemplateSize: =32
+                            ZIndex: =2
+
+                            Container27 As groupContainer.manualLayoutContainer:
+                                Height: =Parent.TemplateHeight
+                                Width: =Parent.Width
+                                ZIndex: =2
+
+                                Main_List As Label:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =Parent.Height
+                                    PaddingStart: =10
+                                    PCFTeamsTheme: =TeamsTheme.Default
+                                    Text: |-
+                                        =If(SubCategory_1.Selected.Name = "Philosophy", If(Text(Question.Selected.key) in Split(ThisItem.philosophy, ","), ThisItem.Name),
+                                        If(SubCategory_1.Selected.Name = "MCAD", If(Text(Question.Selected.key) in Split(ThisItem.mcad, ","), ThisItem.Name,
+                                        If(SubCategory_1.Selected.Name = "EXCEL", If(Text(Question.Selected.key) in Split(ThisItem.excel, ","), ThisItem.Name),
+                                        If(SubCategory_1.Selected.Name = "LOGIC", If(Text(Question.Selected.key) in Split(ThisItem.logic, ","), ThisItem.Name),
+                                        If(SubCategory_1.Selected.Name = "GE", If(Text(Question.Selected.key) in Split(ThisItem.ge, ","), ThisItem.Name),
+                                        If(SubCategory_1.Selected.Name = "SEL", If(Text(Question.Selected.key) in Split(ThisItem.sel, ","), ThisItem.Name),
+                                        If(SubCategory_1.Selected.Name = "GOOSE", If(Text(Question.Selected.key) in Split(ThisItem.goose, ","), ThisItem.Name),
+                                        If(SubCategory_1.Selected.Name = "SVs", If(Text(Question.Selected.key) in Split(ThisItem.svs, ","), ThisItem.Name))))))))))
+                                    Width: =Parent.Width
+                                    X: =0
+                                    Y: =0
+                                    ZIndex: =1
+
+                                Event_List As Label:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =Parent.Height
+                                    PaddingStart: =10
+                                    PCFTeamsTheme: =TeamsTheme.Default
+                                    Text: =If(Category_1.Selected.Name = "Event Analysis", If(Text(Question.Selected.key) in Split(ThisItem.other, ","), ThisItem.Name))
+                                    Width: =Parent.Width
+                                    X: =0
+                                    Y: =0
+                                    ZIndex: =2
+
+        Arrow1 As arrow.backArrow:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =accentRGBA
+            Height: =TitleBar_5.Height * .8
+            OnSelect: =Navigate(UserView)
+            Width: =Self.Height
+            X: =(TitleBar_5.Height - Self.Height)/2
+            Y: =Self.X
+            ZIndex: =3
+

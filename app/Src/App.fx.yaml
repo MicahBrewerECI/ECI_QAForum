@@ -1,0 +1,14 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =Set(mainRGBA, RGBA(50,70,50, 1)) &
+        Set(accentRGBA, RGBA(50,200,100,1))
+    StartScreen: =
+
+    Teams As hostControl.TeamsHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+
