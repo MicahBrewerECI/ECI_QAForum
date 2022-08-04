@@ -1,0 +1,103 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr7c2_survey_userdata_1s",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr7c2_survey_userdata_1",
+    "MaxGetRowsCount": 500,
+    "Name": "Survey_UserData_1",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr7c2_category": "category",
+      "cr7c2_excel": "excel",
+      "cr7c2_ge": "ge",
+      "cr7c2_goose": "goose",
+      "cr7c2_logic": "logic",
+      "cr7c2_mcad": "mcad",
+      "cr7c2_name": "Name",
+      "cr7c2_other": "other",
+      "cr7c2_philosophy": "philosophy",
+      "cr7c2_sel": "sel",
+      "cr7c2_survey_userdata_1_AsyncOperations": "System Jobs",
+      "cr7c2_survey_userdata_1_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr7c2_survey_userdata_1_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr7c2_survey_userdata_1_ProcessSession": "Process Sessions",
+      "cr7c2_survey_userdata_1id": "Survey_UserData",
+      "cr7c2_svs": "svs",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Survey_UserData_1",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Survey_UserData_1 (Views)",
+    "Name": "_cr7c2_survey_userdata_1_views",
+    "RelatedEntityName": "Survey_UserData_1",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2d242252-4fdd-4e76-a020-feed6fe61a02": "Inactive Survey_UserData",
+      "33723ef7-f977-4b3a-8710-9e31a60bfc26": "Survey_UserData Lookup View",
+      "5dd24599-3a27-47fa-8fb0-1f0ac6d6138f": "Survey_UserData Associated View",
+      "84df5911-d524-46bd-a015-c24368af5119": "Survey_UserData Advanced Find View",
+      "ec78de7c-8113-42f2-9187-eb7353ae6dc6": "Active Survey_UserData"
+    }
+  },
+  {
+    "DisplayName": "Status (Survey_UserData_1)",
+    "Name": "cr7c2_survey_userdata_1_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Survey_UserData_1"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Survey_UserData_1",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Survey_UserData_1)",
+    "Name": "cr7c2_survey_userdata_1_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Survey_UserData_1"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Survey_UserData_1",
+    "Type": "OptionSetInfo"
+  }
+]

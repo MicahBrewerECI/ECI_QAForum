@@ -1,0 +1,132 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr7c2_survey_userkeys_forms",
+      "Namespace": "Survey_UserKeys (Forms)",
+      "Values": {
+        "Information": "d04bed70-302d-4d0d-a83e-bbd5a4343ea9"
+      }
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_datacategory_forms",
+      "Namespace": "Survey_DataCategories (Forms)",
+      "Values": {
+        "Information": "2d0eff06-9c98-4c86-8b87-f84b35d3ca80"
+      }
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_dataquestions_1_forms",
+      "Namespace": "Survey_DataQuestions (Forms)",
+      "Values": {
+        "Information": "ff017fcf-6cb8-44b9-a666-ce8f9c4426ae"
+      }
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_userdata_1_forms",
+      "Namespace": "Survey_UserData_1 (Forms)",
+      "Values": {
+        "Information": "097df7b4-32aa-466c-9de2-cb612b7aef53"
+      }
+    },
+    {
+      "Kind": "default.cds_systemuser_forms",
+      "Namespace": "Users (Forms)",
+      "Values": {
+        "Application User": "d26924ef-4d80-46f7-ab1d-e6ae80a54ce8",
+        "Information": "094fb08a-77bb-49e0-b7ea-8dbddfd01294",
+        "User": "c2cd9e55-d4b4-4b55-9951-16ead79643e5",
+        "User Hierarchy Tile Form": "c68d6c09-d7a7-4959-8d0f-44b8cff9b452"
+      }
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_datasubcategory_forms",
+      "Namespace": "Survey_DataSubCategories (Forms)",
+      "Values": {
+        "Information": "12147a7f-70c7-4e68-ad18-ab9cbe434f14"
+      }
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_admin_forms",
+      "Namespace": "Survey_Admins (Forms)",
+      "Values": {
+        "Information": "f51a340e-bcad-40d7-b290-5b1ac69ebdea"
+      }
+    },
+    {
+      "Kind": "default.cds_bulkdeletefailure_forms",
+      "Namespace": "Bulk Delete Failures (Forms)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_userdata_forms",
+      "Namespace": "Survey_UserData (Forms)",
+      "Values": {
+        "Information": "51c67b77-4e4d-4839-99bb-e5c84f224588"
+      }
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_userkey_forms",
+      "Namespace": "Survey_UserKeys (Forms)1",
+      "Values": {
+        "Information": "6b45a11a-62cc-465f-b301-fb4f274e06c4"
+      }
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_dataquestions_forms",
+      "Namespace": "Survey_DataQuestions (Forms)1",
+      "Values": {
+        "Information": "dd3451cc-a9d6-4221-a943-f00e14a922ef"
+      }
+    },
+    {
+      "Kind": "default.cds_cr7c2_data_user_standards_forms",
+      "Namespace": "Data_User_Standards (Forms)",
+      "Values": {
+        "Information": "dadffd46-93a3-44e9-a112-577bfd4e3420"
+      }
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_dataquestions_1_forms",
+      "Namespace": "Survey_DataQuestions (Forms)11",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_dataquestions_1_forms",
+      "Namespace": "Survey_DataQuestions (Forms)2",
+      "Values": {
+        "Information": "ff017fcf-6cb8-44b9-a666-ce8f9c4426ae"
+      }
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_dataquestions_1_forms",
+      "Namespace": "Survey_DataQuestions (Forms)3",
+      "Values": {
+        "Information": "ff017fcf-6cb8-44b9-a666-ce8f9c4426ae"
+      }
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_dataquestions_1_forms",
+      "Namespace": "Survey_DataQuestions (Forms)4",
+      "Values": {
+        "Information": "ff017fcf-6cb8-44b9-a666-ce8f9c4426ae"
+      }
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_userkey_1_forms",
+      "Namespace": "Survey_UserKeys (Forms)11",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_userkey_1_forms",
+      "Namespace": "Survey_UserKeys (Forms)2",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_cr7c2_survey_userkeys_forms",
+      "Namespace": "Survey_UserKeys (Forms)3",
+      "Values": {
+        "Information": "d04bed70-302d-4d0d-a83e-bbd5a4343ea9"
+      }
+    }
+  ]
+}
